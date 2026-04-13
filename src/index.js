@@ -52,6 +52,11 @@ while(missao = "SIM" || contador === 3){
     contador++
     if(contador >= 3) {
         console.log('\nO herói está cansado e voltou para casa!')
-        break;
-}
+
+    saldo = novoSaldo
+    novoNivel = nivelHeroi(novoSaldo)
+
+    console.log('\nO Herói alcançou o nível ' + novoNivel)
+    break;
+    }
 }
