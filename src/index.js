@@ -40,19 +40,18 @@ let nivel = nivelHeroi(saldoVitorias)
 
 console.log('O Herói tem de saldo de '+ saldoVitorias + " está no nível de " + nivel)
 
-let novoSaldo = saldoVitorias + 1
+let novoSaldo = saldoVitorias
 let missao = "Não"
 let contador = 0
 
 while(missao = "SIM" || contador === 3){
+    novoSaldo++
     console.log('\nO Herói saiu para uma missão!')
     console.log('O Herói adquiriu mais uma vitória! e está atualmente com ' + novoSaldo)
 
     contador++
     if(contador >= 3) {
         console.log('\nO herói está cansado e voltou para casa!')
-
-    saldo = novoSaldo
-    break;
+        break;
 }
 }
