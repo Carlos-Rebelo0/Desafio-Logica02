@@ -35,7 +35,7 @@ function nivelHeroi(saldo){
 
 }
 
-let saldoVitorias = saldo
-let nivel = nivelHeroi
+let saldoVitorias = saldo(86,7)
+let nivel = nivelHeroi(saldoVitorias)
 
 console.log('O Herói tem de saldo de '+ saldoVitorias + " está no nível de " + nivel)
